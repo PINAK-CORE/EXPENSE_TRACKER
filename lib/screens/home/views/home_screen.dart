@@ -1,3 +1,4 @@
+import 'package:expense_tracker/screens/home/views/main_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,15 +8,34 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold
     (
-      appBar: AppBar(),
-      bottomNavigationBar: BottomNavigationBar
+      appBar: AppBar
       (
-        items: 
-        [
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled) , label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.auto_graph_sharp) , label: "graph")
-        ],
+        backgroundColor: Colors.white,
       ),
+      bottomNavigationBar: ClipRRect(
+        borderRadius: BorderRadius.circular(5),
+        child: BottomNavigationBar
+        (
+          backgroundColor: Colors.white,
+          elevation: 5 ,  
+          
+          
+          items: 
+          [
+            BottomNavigationBarItem(icon: Icon(Icons.home_filled) , label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.auto_graph_sharp) , label: "graph")
+          ],
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButtonAnimator: FloatingActionButtonAnimator.scaling,
+      floatingActionButton: FloatingActionButton
+      (
+        onPressed: () {} , 
+        shape: CircleBorder(),
+        child: Icon(Icons.add),
+      ),
+      body: MainScreen(),
     );
   }
 }
