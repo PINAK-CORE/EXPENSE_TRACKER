@@ -15,7 +15,8 @@ class AppView extends StatelessWidget {
         colorScheme: const ColorScheme.light
         (
           surface: Colors.grey,
-          onSurface: Colors.black
+          onSurface: Colors.black,
+          
         ),
         
       ),
