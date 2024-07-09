@@ -19,12 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
     late Color selectedItem = Colors.black;
     Color unSelectedItem = Colors.grey;
 
-    @override
-  void initState() {
-  Color selectedItem = Colors.black;
-  super.initState();
-  }
-
+   
   @override
   Widget build(BuildContext context) {
     return Scaffold
