@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
@@ -85,15 +85,15 @@ class MainScreen extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: const BorderRadius.all(Radius.circular(20)),
                 border: Border.all(color: Colors.black),
-                boxShadow: 
-                const [
-                  BoxShadow
-                  (
-                    blurRadius: 10,
-                    color: Colors.grey,
-                    offset: Offset(0, 5)
-                  )
-                ] 
+                // boxShadow: 
+                // const [
+                //   BoxShadow
+                //   (
+                //     blurRadius: 10,
+                //     color: Colors.grey,
+                //     offset: Offset(0, 5)
+                //   )
+                // ] 
               ),
               
               child:  const Column
@@ -279,13 +279,13 @@ class MainScreen extends StatelessWidget {
                       border: Border.all(color: Colors.black),
                       boxShadow: 
                       const [
-                      BoxShadow
-                      (
-                        blurRadius: 5,
-                        color: Colors.grey,
-                        offset: Offset(0, 5)
+                      // BoxShadow
+                      // (
+                      //   blurRadius: 5,
+                      //   color: Colors.grey,
+                      //   offset: Offset(0, 5)
                         
-                      )
+                      // )
                       ] 
                     
                     ),
@@ -300,8 +300,8 @@ class MainScreen extends StatelessWidget {
                             Padding
                             (
                               padding: EdgeInsets.all(10.0),
-                              child:  FaIcon(FontAwesomeIcons.dollarSign),
-                              // child: Icon(Icons.attach_money_rounded),
+                              child:  FaIcon(FontAwesomeIcons.dollarSign , color: Colors.black,),
+                              
                             ),
                             
                             Text
